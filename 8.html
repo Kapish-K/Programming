@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button_off {
+    background-color: red;
+    padding: 10px;
+    border-radius: 100px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.button_on {
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 100px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 300px;
+}
+.product_container {
+    background-color: rgba(241, 241, 241, 0.205);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sub_product_container {
+    background-color: rgba(0, 0, 0, 0.205);
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    border: solid rgb(255, 255, 255);
+    margin: 0;
+}
+.text {
+    font-style: italic;
+}
+.info_text {
+    font-size: small;
+}
+</style>
+</head>
+<body>
+
+<h1>Loja</h1>
+<h4>Clicar no botão para acender e desligar a lâmpada</h4>
+
+<div class="product_container">
+    <div class="sub_product_container">
+        <img id="myImage1" src="asusrog1.jpg" style="width: 100px">
+        <h3>ASUS ROG</h3>
+        <h5 class="text">Zephyrus G16</h5>
+        <p id="info1" class="info_text">clique no botão para receber informação sobre produto</p>
+        <button class="button_on" onclick="document.getElementById('info1').innerHTML=ASUSROG1">Ligar Luz</button>
+    </div>
+
+    <div class="sub_product_container">
+        <img id="myImage2" src="asusrog2.jpg" style="width: 100px">
+        <h3>ASUS ROG</h3>
+        <h5 class="text">Zephyrus G15</h5>
+        <p id="info2" class="info_text">clique no botão para receber informação sobre produto</p>
+        <button class="button_on" onclick="document.getElementById('info2').innerHTML=ASUSROG2">Ligar Luz</button>
+    </div>
+    <div class="sub_product_container">
+        <img id="myImage3" src="asusrog3.jpg" style="width: 100px">
+        <h3>ASUS ROG</h3>
+        <h5 class="text">Zephyrus G17</h5>
+        <p id="info3" class="info_text">clique no botão para receber informação sobre produto</p>
+        <button class="button_on" onclick="document.getElementById('info3').innerHTML=ASUSROG3">Ligar Luz</button>
+    </div>
+</div>
+
+
+
+
+<script>
+var ASUSROG1 = "<b>Processador:</b> Até Intel® Core™ Ultra 9 386H <br> <b>Placa Gráfica:</b> Até NVIDIA® GeForce RTX™ 5090 Laptop GPU (TGP Máx. 160 W).<br> <b>Ecrã:</b> ROG Nebula OLED de 16 polegadas, resolução 2.5K (2560 x 1600), 240Hz de taxa de atualização e brilho máximo até 1.100 nits."
+var ASUSROG2 = "<b>Processador:</b> Até Intel® Core™ Ultra 9 290HX Plus.<br> <b>Placa Gráfica:</b> Até NVIDIA® GeForce RTX™ 5080.<br> <b>Ecrã:</b> Painel de 16 polegadas 2.5K IPS-level com suporte para 300Hz de taxa de atualização e compatibilidade DLSS 4.";
+
+var ASUSROG3 = "<b>Processador:</b> AMD Ryzen™ Z1 Extreme (arquitetura 'Zen 4' de 4nm).<br> <b>Gráficos:</b> AMD Radeon™ Graphics (RDNA™ 3 com 12 CUs).<br> <b>Bateria & Memória:</b> Bateria de 80Wh, 24GB de RAM LPDDR5X e 1TB de armazenamento SSD.";
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .button_off{
+                background-color: red;
+                padding: 10px;
+                border-radius: 100px;
+                
+                
+            }
+            .button_on{
+                background-color: green;
+                padding: 10px;
+                border-radius: 100px;
+                
+            }
+            .container {
+                background-color: rgba(241, 241, 241, 0.205);
+                padding: 30px;
+                border-radius: 10px;
+                text-align: center;
+                border: solid red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h3>Acender Luz</h3>
+        <h4>Clickar no botão para acender e desligar lamapada</h4>
+        <div class="container">
+            <img  id="myImage" src="Luzoff.jpg" style="width: 100px">
+
+        </div>
+        <button class="button_on" onclick="document.getElementById('myImage').src='Luzon.jpg'">Ligar Luz</button>
+        
+        <button class="button_off" onclick="document.getElementById('myImage').src='Luzoff.jpg'">Desligar Luz</button>
+        
+       
+    </body>
+</html>
